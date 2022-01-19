@@ -21,12 +21,26 @@
   <link rel="stylesheet" href="css/parellax.css">
 
   <meta name="theme-color" content="#fafafa">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Outfit:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
   <!-- Add your site or application content here -->
   <div class="main">
+    <header>
+      <div class="logo">logo</div>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Menu</li>
+          <li>Contact</li>
+          <li>About us</li>
+        </ul>
+      </nav>
+    </header>
 
     <section>
       <img id="star" src="/img/stars.png" />
@@ -35,9 +49,45 @@
       <div id="text">Moon light</div>
       <img id="mFront" src="/img/mountains_front.png" />
     </section>
-    <div style="height: 100vh">
+    <div class="content" style="height: 100vh">
+      <h1>Lorem ipsum dolor </h1>
       <p class="long-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Etiam facilisis nec quam sed mollis. Nullam luctus metus sit amet augue ullamcorper, in facilisis
+        nisi suscipit. Morbi quam lectus, vehicula vel rhoncus a,
+        elementum eu metus. Nulla feugiat massa quis ultrices gra
+        vida. Pellentesque ultricies nibh erat, vel tempus massa vu
+        lputate vitae. Ut scelerisque, odio id vehicula interdum, dui ni
+        si laoreet ex, vel pellentesque felis lacus sollicitudin nisl. Al
+        iquam id tempus odio. Maecenas maximus, ex vel interdum convallis,
+         neque purus congue lectus, vitae congue ligula felis non erat. Int
+         eger et venenatis magna, non scelerisque ligula. Donec rutrum
+         imperdiet tortor eget laoreet. Donec non vulputate sem. Aliquam eleifend tellus vel justo varius vulputate. Cras consectetur iaculis porta. Donec vel elit suscipit, dignissim quam et, accumsan diam. Etiam aliquam purus tincidunt massa ultricies, eget condimentum ligula semper. Mauris pretium, felis id vestibulum condimentum, purus ipsum auctor justo, ac convallis lacus erat et nunc.
 
+        Etiam ut bibendum erat, sit amet cursus neque. Curabitur
+         tincidunt auctor velit quis commodo. Etiam at purus non n
+         isi condimentum sollicitudin. Nulla a nisi nisi. Etiam imper
+         diet et purus non elementum. Aliquam at feugiat eros. Donec quis neque consequat ipsum cursus egestas.
+        <br />
+
+
+      </p>
+      <h1>Praesent accumsan </h1>
+      <p>
+        Praesent accumsan turpis vel ipsum posuere vestibulum.
+        Donec facilisis posuere sapien non mattis. Pellentesque pos
+        uere odio vitae quam volutpat tempus. Fusce commodo blandit e
+        ros. Curabitur commodo egestas tellus sit amet convallis. Aliquam sed accumsan tellus. Praesent pretium, ligula eu viverra rutrum, ante mauris sagittis tortor, vel consectetur elit nisl eget elit. Phasellus placerat porttitor ligula id vestibulum. Donec feugiat suscipit convallis. In mattis massa sit amet metus consectetur condimentum. Aliquam fermentum, massa tempus pretium finibus, odio ipsum iaculis nisi, eget mattis mi risus eget ex. Cras semper magna id vestibulum volutpat.
+
+        Morbi tristique, sem eget finibus venenatis, lorem lectu
+        s finibus tortor, nec fringilla lorem purus vel libero. Q
+        uisque nec pulvinar arcu. Etiam et rutrum ligula. Sed tincid
+        unt venenatis tortor, eget pulvinar risus auctor et. Fusce sollicitudin consectetur lacinia. Nullam nec orci placerat, dapibus nunc ut, tempor turpis. Cras quis erat mattis, ultrices enim ut, laoreet urna. Vestibulum ut tincidunt turpis, sed tincidunt ipsum. Pellentesque condimentum scelerisque nisl et tincidunt. Morbi nec lectus tincidunt augue auctor euismod a sit amet ligula.
+
+        Ut pellentesque in lacus eget viverra. Interdum et ma
+        lesuada fames ac ante ipsum primis in faucibus. Sed pel
+        lentesque aliquet mauris, id vestibulum lectus. Curabitur
+        sagittis porttitor suscipit. Morbi nec consequat eros, ut porttitor quam. Pellentesque lacinia tempor urna, nec volutpat ante condimentum nec. Curabitur tempor quis erat a tempor. Cras a sem tempor, egestas eros at, dictum neque.
       </p>
 
     </div>
@@ -56,9 +106,9 @@
       const mFront = document.querySelector('#mFront')
       const text = document.querySelector('#text')
 
-      moon.style.transform = `translateY(${scrollY * 1.5}px)`
-      mBehind.style.transform = `translateY(${scrollY * -0.25}px)`
-      text.style.transform = `translateX(${scrollY}%)`
+      moon.style.transform = `translateY(${scrollY * 1.2}px)`
+      mBehind.style.transform = `translateY(${scrollY * -0.1}px)`
+      text.style.transform = `translateX(${(scrollY * 0.4)}%)`
 
     })
 

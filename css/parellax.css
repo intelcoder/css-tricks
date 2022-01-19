@@ -1,3 +1,7 @@
+html * {
+  box-sizing: border-box;
+}
+
 .main {
   padding-top: 48px;
   width: 100%;
@@ -5,13 +9,54 @@
   background: linear-gradient(#2b1055, #7597de);
 }
 
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 48px;
+}
+
+header ul {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 24px;
+}
+
+div.logo {
+  color: white;
+  font-size: 2rem;
+  font-family: 'Mochiy Pop P One', sans-serif;
+
+}
+
+
+header li {
+  color: white;
+  border-radius: 9999px;
+  padding: 12px 24px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  font-family: 'Outfit', sans-serif;
+}
+header li:hover {
+  opacity: 0.9;
+}
+
+
 section {
   width: 100%;
-  height: 65%;
+  height: 100vh;
+  padding: 100px;
+  box-sizing: border-box;
+
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 section::after {
   content: "";
@@ -25,29 +70,48 @@ section::after {
 
 section img {
   width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
+  left: 0;
   object-fit: cover;
 }
 
 section img#moon {
-  background-blend-mode: screen;
+  mix-blend-mode: screen;
 }
 
 #text {
   position: absolute;
-  top: 50%;
-  font-size: 4rem;
+  top: 45%;
+  font-size: 6rem;
+  font-weight: bold;
   color: white;
   text-transform: uppercase;
-  transform: translateX(-200%);
-
+  transform: translateX(0);
+}
+.content {
+  background: #0B0115;
+  padding: 24px;
+}
+.content h1 {
+  margin: 0;
+  padding: 24px 0;
+  color: white;
+  font-size: 4rem;
+  font-family: 'Mochiy Pop P One', sans-serif;
 
 }
+.content p {
+  color: white;
+  font-size: 16px;
 
+}
 .long-text {
   margin: 0;
-  padding: 24px;
+  box-sizing: border-box;
+  width: 100%;
   background: #0B0115;
   color: white;
+
 }
