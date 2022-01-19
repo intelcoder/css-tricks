@@ -89,6 +89,8 @@ section img#moon {
   color: white;
   text-transform: uppercase;
   transform: translateX(0);
+  font-family: 'Mochiy Pop P One', sans-serif;
+
 }
 .content {
   background: #0B0115;
