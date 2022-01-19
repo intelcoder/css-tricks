@@ -1,0 +1,48 @@
+
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+  background-repeat: no-repeat;
+  padding: 48px;
+}
+@keyframes typeAnimation {
+
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+
+}
+.type-writer {
+  font-size: 4rem;
+  width: 0;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+
+  animation: typeAnimation 0.8s steps(20, end) forwards;
+  text-align: left;
+  color: white;
+
+}
+
+.container:nth-child(1) .type-writer {
+  animation-delay: 0.8s;
+}
+
+.container:nth-child(2) .type-writer{
+  animation-delay: 1.6s;
+
+}
+.container:nth-child(3) .type-writer{
+  animation-delay: 2.4s;
+}
+.container:nth-child(4) .type-writer{
+  animation-delay: 3.2s;
+}
+
