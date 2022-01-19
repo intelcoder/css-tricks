@@ -18,6 +18,7 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/parellax.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -25,10 +26,43 @@
 <body>
 
   <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  <div class="main">
+
+    <section>
+      <img id="star" src="/img/stars.png" />
+      <img id="moon" src="/img/moon.png" />
+      <img id="mBehind" src="/img/mountains_behind.png" />
+      <div id="text">Moon light</div>
+      <img id="mFront" src="/img/mountains_front.png" />
+    </section>
+    <div style="height: 100vh">
+      <p class="long-text">
+
+      </p>
+
+    </div>
+  </div>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+
+  <script>
+    document.addEventListener('scroll', () => {
+      const scrollY = window.scrollY
+
+      const star = document.querySelector('#star')
+      const moon = document.querySelector('#moon')
+      const mBehind = document.querySelector('#mBehind')
+      const mFront = document.querySelector('#mFront')
+      const text = document.querySelector('#text')
+
+      moon.style.transform = `translateY(${scrollY * 1.5}px)`
+      mBehind.style.transform = `translateY(${scrollY * -0.25}px)`
+      text.style.transform = `translateX(${scrollY}%)`
+
+    })
+
+  </script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
